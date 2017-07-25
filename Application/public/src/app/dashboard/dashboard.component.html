@@ -1,0 +1,19 @@
+<h1  *ngIf="user">Hi {{user.username}}!</h1>
+<br>
+<a href="/logout"> logout</a>
+<br><br>
+<a href="/new_question"> Add a Question</a>
+<br><br>
+
+ <div *ngFor="let question of questions">
+    <p>Question: {{question.question}}</p>
+   
+    </div>
+  
+
+
+
+
+
+
+	

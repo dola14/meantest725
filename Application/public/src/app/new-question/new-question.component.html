@@ -1,0 +1,19 @@
+<a href="/home"> Home</a>
+<br>
+<a href="/logout"> logout</a>
+<br><br>
+<form (submit)="createQuestion()">
+  <label> New Question</label>
+  <br><br>
+  <input type="text" name="question" [(ngModel)]="question.question">
+  <br>
+  <input type="submit">
+  </form>
+<br>
+  <input type="submit" value="cancel">
+
+  <div *ngFor="let question of questions">
+    <p>Question: {{question.question}}</p>
+    </div>
+  
+
